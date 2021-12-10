@@ -13,7 +13,7 @@ const cart: Reducer<ICartState, AnyAction> = (
 ) => {
   return produce(state, (draft) => {
     switch (action.type) {
-      case "ADD_PRODUCT_TO_CART":
+      case "ADD_PRODUCT_TO_CART_SUCCESS":
         const { product } = action.payload;
 
         const productInCartIndex = draft.items.findIndex(
@@ -29,6 +29,9 @@ const cart: Reducer<ICartState, AnyAction> = (
           });
         }
 
+        break;
+      case "ADD_PRODUCT_TO_CART_FAILURE":
+        console.log('Faileure: ', action.payload);
         break;
       default:
         return draft;
