@@ -4,6 +4,21 @@
   <h1>Projeto para estudo - Redux / Redux Saga</h1>
 </div>
 
+## Conteúdo
+
+- [O que o Redux resolve ?](#o-que-o-redux-resolve)
+- [O Redux possui três Princípios ?](#o-que-possui-tres-principios)
+  - [Single source of truth](#single-source-of-truth)
+  - [State is read-only](#state-is-read-only)
+  - [Changes are made with pure functions](#changes-are-made-with-pure-functions)
+- [Fluxo de uma evolução de estado](#fluxo-de-uma-evolução-de-estado)
+  - [Store](#store)
+  - [Actions](#actions)
+  - [Reducers](#reducers)
+- [Estrutura do nosso projeto](#estrutura-do-nosso-projeto)
+- [Conexão dos nossos componentes com o redux](#conexao-dos-nossos-componentes-com-o-redux)
+- [Acionando as actions](#acionando-as-actions)
+
 ## O que o Redux resolve ?
 
 O [Redux](https://redux.js.org/) é uma implementação da arquitetura Flux que propõe uma solução ao problema de compartilhamento de estados em aplicações web que consiste em criar um fluxo unidirecional de dados que poderá ser consumido por qualquer parte da aplicação.
@@ -172,7 +187,7 @@ function cart(state = INITIAL_STATE, action) {
 export default cart;
 ```
 
-#### Conexão dos nossos components com o redux
+#### Conexão dos nossos componentes com o redux
 
 Para termos acesso aos estados da nossa aplicação precisamos nos conectar a nossa store:
 
