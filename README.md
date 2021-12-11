@@ -4,8 +4,6 @@
   <h1>Projeto para estudo - Redux / Redux Saga</h1>
 </div>
 
----
-
 ## O que o Redux resolve ?
 
 O [Redux](https://redux.js.org/) é uma implementação da arquitetura Flux que propõe uma solução ao problema de compartilhamento de estados em aplicações web que consiste em criar um fluxo unidirecional de dados que poderá ser consumido por qualquer parte da aplicação.
@@ -229,7 +227,7 @@ export default AddToCartButton;
 
 ---
 
-<div align="center">
-  <img src="https://avatars.githubusercontent.com/u/64603070?s=48&v=4" width="40" />
-  <sub>Made with 💜 by <a href="https://github.com/arimariojesus">Arimário jesus</a></sub>
+<div align="center" style="display: flex; align-items: center; justify-content: center">
+  <img src="https://avatars.githubusercontent.com/u/64603070?s=48&v=4" width="40" style="padding-right: 10px" />
+  <span>Made with 💜 by <a href="https://github.com/arimariojesus">Arimário jesus</a></span>
 </div>
