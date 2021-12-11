@@ -7,7 +7,7 @@
 ## Conteúdo
 
 - [O que o Redux resolve ?](#o-que-o-redux-resolve)
-- [O Redux possui três Princípios ?](#o-que-possui-tres-principios)
+- [O Redux possui três Princípios](#o-que-possui-tres-principios)
   - [Single source of truth](#single-source-of-truth)
   - [State is read-only](#state-is-read-only)
   - [Changes are made with pure functions](#changes-are-made-with-pure-functions)
@@ -84,7 +84,7 @@ Todos os nossos arquivos relacionados estarão dentro da pasta *store*. Os arqui
 
 Farei um breve resumo de cada arquivo abordando apenas o essencial, recomendo que abra cada arquivo dentro do projeto e busque na documentação para poder investigar de formar mais aprofundada.
 
-#### **store/modules/rootReducer.ts
+#### store/modules/rootReducer.ts
 
 Dentro do nosso *rootReducer* é onde será centralizado todos os nossos reducers, e para isso utilizaremos o [combineReducers](https://redux.js.org/api/combinereducers):
 
@@ -99,7 +99,7 @@ export default combineReducers({
 });
 ```
 
-#### **store/index.ts**
+#### store/index.ts
 
 Criamos nossa **store** e exportamos para poder ser consumida por toda a aplicação:
 
@@ -113,7 +113,7 @@ const store = createStore(
 
 E então provemos nosso estado global para toda a aplicação com o [Provider]() do [react-redux](https://react-redux.js.org/):
 
-#### **/src/App.tsx**
+#### /src/App.tsx
 
 ```ts
 import { Provider } from 'react-redux';
@@ -127,7 +127,7 @@ function App() {
 }
 ```
 
-#### **store/modules/cart/types.ts**
+#### store/modules/cart/types.ts
 
 É aconselhável que criêmos uma constante para armazenas todos os tipos das nossas actions como no exemplo abaixo:
 
